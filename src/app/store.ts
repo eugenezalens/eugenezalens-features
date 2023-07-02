@@ -4,6 +4,6 @@ export const store = configureStore({
   reducer: {},
 })
 
-export type AppDispatch = typeof store.dispatch
-export type RootState = ReturnType<typeof store.getState>
-export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, Action<string>>
+export type TAppDispatch = typeof store.dispatch
+export type TRootState = ReturnType<typeof store.getState>
+export type TAppThunk<ReturnType = void> = ThunkAction<ReturnType, TRootState, unknown, Action<string>>

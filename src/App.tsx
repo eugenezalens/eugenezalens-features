@@ -1,7 +1,14 @@
 import { FC } from 'react'
 
+import Styled from './App.styles'
+import { AppRouter } from './router'
+
 const App: FC = () => {
-  return <div></div>
+  return (
+    <Styled.Wrapper>
+      <AppRouter />
+    </Styled.Wrapper>
+  )
 }
 
 App.displayName = 'App'
