@@ -1,22 +1,28 @@
-import { FC } from 'react'
+import { FC, useMemo } from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 import { Header, PageStructure } from '../common/components/page'
-import { Link } from 'react-router-dom'
 import { Tab } from '../common/components/elements'
+import { EAppRoute } from '../../routes'
 
 const Features: FC = () => {
+  const subsectionList = useMemo(() => {
+    return [{ title: 'FEATURES', link: EAppRoute.Features, isDisabled: true }]
+  }, [])
+
   return (
     <PageStructure
       header={
         <Header
-          pageName={'FEATURES'}
+          subsectionList={subsectionList}
           children={
-            <Link to={'/'}>
-              <Tab>Home</Tab>
+            <Link to={EAppRoute.FeaturesComparisonTable}>
+              <Tab>Comparison table</Tab>
             </Link>
           }
         />
       }
+      content={<Outlet />}
     />
   )
 }

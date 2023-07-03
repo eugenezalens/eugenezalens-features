@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { EPadding } from '../../../assets/styles/Padding'
+import { EColor } from '../../../assets/styles/Color'
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -8,6 +9,9 @@ const HeaderWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
+  margin: 0 auto;
+  width: 912px;
+
   flex: 1 1 auto;
 
   padding: ${EPadding.S2} ${EPadding.S1};
@@ -22,6 +26,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: ${EColor.PageSecondary};
 `
 
 const StyledPageStructure = {

@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC, memo, PropsWithChildren } from 'react'
 
 import Styled from './Tab.styles'
 
@@ -12,4 +12,4 @@ const Tab: FC<PropsWithChildren> = ({ children }) => {
 
 Tab.displayName = 'Tab'
 
-export default Tab
+export default memo(Tab)

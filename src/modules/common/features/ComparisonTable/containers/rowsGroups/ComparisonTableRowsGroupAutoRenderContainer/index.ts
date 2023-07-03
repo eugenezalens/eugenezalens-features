@@ -1,0 +1,3 @@
+import ComparisonTableRowsGroupAutoRenderContainer from './ComparisonTableRowsGroupAutoRenderContainer'
+
+export { ComparisonTableRowsGroupAutoRenderContainer }

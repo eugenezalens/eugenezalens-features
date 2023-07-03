@@ -8,12 +8,10 @@ import { StyledDefaultStyles as Styled } from './modules/common/assets/styles/De
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <Styled.DefaultStyles />
-        <App />
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <BrowserRouter>
+      <Styled.DefaultStyles />
+      <App />
+    </BrowserRouter>
+  </Provider>
 )

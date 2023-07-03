@@ -1,0 +1,3 @@
+import ComparisonTableHeaderAutoRenderContainer from './ComparisonTableHeaderAutoRenderContainer'
+
+export { ComparisonTableHeaderAutoRenderContainer }

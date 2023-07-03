@@ -3,7 +3,7 @@ import { EPadding } from '../../../assets/styles/Padding'
 import { EColor } from '../../../assets/styles/Color'
 
 const Title = styled.span`
-  color: ${EColor.TitlePrimary};
+  color: ${EColor.TitleSecondary};
   font-weight: bold;
 
   &:hover {

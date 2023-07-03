@@ -1,17 +1,12 @@
-# vite-template-redux
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
-
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+## EUGENEZALENS
 
 ## Goals
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+Show how you can create fully extensible projects based on the most popular preocclusion patterns and technologies.
+
+## Features
+- Comparison Table — a table that allows you to add any number of columns, to control each of its elements, and to replace and change them in real time from anywhere in the project.
 
 ## Scripts
 
@@ -19,9 +14,3 @@ npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
 - `build` - build for production
 - `preview` - locally preview production build
 - `test` - launch test runner
-
-## Inspiration
-
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)

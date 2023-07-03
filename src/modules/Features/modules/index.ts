@@ -1,3 +1,3 @@
-import { TableFiltersModule } from './TableFiltersModule'
+import { ComparisonTableSample } from './ComparisonTableSample'
 
-export { TableFiltersModule }
+export { ComparisonTableSample }

@@ -1,18 +1,21 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { EPadding } from '../../../assets/styles/Padding'
 import { EColor } from '../../../assets/styles/Color'
 
-const PageName = styled.h2`
-  font-size: 12px;
-  font-weight: bold;
+const Subsection = styled.div<{ $isDisabled?: boolean }>`
+  padding-left: ${EPadding.S6};
+  border-left: 2px solid ${EColor.TitleSecondary};
 
-  color: gray;
+  ${({ $isDisabled }) =>
+    $isDisabled &&
+    css`
+      pointer-events: none;
+    `}
 `
 
-const PageNameWrapper = styled.div`
-  padding-left: ${EPadding.S6};
-
-  border-left: 2px solid ${EColor.TitleSecondary};
+const SubsectionsWrapper = styled.div`
+  display: flex;
+  gap: ${EPadding.S6};
 `
 
 const Title = styled.h1`
@@ -39,15 +42,14 @@ const Wrapper = styled.header`
   justify-content: space-between;
 
   padding: ${EPadding.S3};
-  border-bottom: 1px solid ${EColor.TitlePrimary};
 
   align-items: center;
   background-color: ${EColor.PagePrimary};
 `
 
 const StyledHeader = {
-  PageName,
-  PageNameWrapper,
+  Subsection,
+  SubsectionsWrapper,
   Title,
   Logo,
   DescriptionWrapper,
